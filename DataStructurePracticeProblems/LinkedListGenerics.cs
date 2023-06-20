@@ -143,7 +143,7 @@ namespace DataStructurePracticeProblems
             temp.Next = next;
             Size();
         }
-        public void Size()
+        public int Size()
         {
             int count = 0;
             Node<T> temp = this.head;
@@ -157,6 +157,38 @@ namespace DataStructurePracticeProblems
                 temp = temp.Next;
             }
             Console.WriteLine("Size is " + count);
+            return count;
+        }
+        public void Sort()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            int size = Size();
+            Node<T> current = this.head;
+            Node<T> index = null;
+            T temp;
+            while (current != null)
+            {
+                index = current.Next;
+                while (index != null)
+                {
+                    T a = current.data;
+                    T b = index.data;
+                    if (a.CompareTo(b) < 0)
+                    {
+                        temp = a;
+                        a = b;
+                        b = temp;
+                    }
+                    current.data = a;
+                    index.data = b;
+                    index = index.Next;
+                    current = current.Next;
+                }
+
+            }
         }
     }
 }
