@@ -36,9 +36,26 @@ namespace DataStructurePracticeProblems
                 Console.WriteLine(data);
             }
             list.Pop();
-            foreach(int data in list)
+            Console.WriteLine("After removing elements from linked list ");
+            foreach (int data in list)
             {
-                Console.WriteLine("After removing elements from linked list ");
+                Console.WriteLine(data);
+            }
+        }
+        public void InBuiltQueues()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(30);
+            queue.Enqueue(60);
+            queue.Enqueue(40);
+            foreach(int data in queue)
+            {
+                Console.WriteLine(data);
+            }
+            queue.Dequeue();
+            Console.WriteLine("After Removing Elements from linkedlist");
+            foreach ( int data in queue)
+            {
                 Console.WriteLine(data);
             }
         }

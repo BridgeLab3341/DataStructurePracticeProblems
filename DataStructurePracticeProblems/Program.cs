@@ -24,7 +24,8 @@
            // queues.Display();
            InBuiltFunction inBuilt=new InBuiltFunction();
             //inBuilt.LinkedListInBuilt();
-            inBuilt.StacksInBuilt();
+            //inBuilt.StacksInBuilt();
+            inBuilt.InBuiltQueues();
         }
     }
 }
