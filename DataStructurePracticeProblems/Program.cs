@@ -23,7 +23,8 @@
            // queues.Dequeue();
            // queues.Display();
            InBuiltFunction inBuilt=new InBuiltFunction();
-            inBuilt.LinkedListInBuilt();
+            //inBuilt.LinkedListInBuilt();
+            inBuilt.StacksInBuilt();
         }
     }
 }
