@@ -15,13 +15,15 @@
             //stacks.Push(3);
             //stacks.Display();
            // stacks.Pop();
-           Queues<int>queues = new Queues<int>();
-            queues.Enqueue(1);
-            queues.Enqueue(2);
-            queues.Enqueue(3);
-            queues.Display();
-            queues.Dequeue();
-            queues.Display();
+           //Queues<int>queues = new Queues<int>();
+           // queues.Enqueue(1);
+           // queues.Enqueue(2);
+           // queues.Enqueue(3);
+           // queues.Display();
+           // queues.Dequeue();
+           // queues.Display();
+           InBuiltFunction inBuilt=new InBuiltFunction();
+            inBuilt.LinkedListInBuilt();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructurePracticeProblems
 {
-    internal class LinkedList<T>
+    internal class LinkedListGenerics<T>
     {
         public Node<T> head;
         public void Add(T data)
